@@ -1,0 +1,1 @@
+DELETE from tiempo1 where (UNIX_TIMESTAMP()-tiempo1.time)>60

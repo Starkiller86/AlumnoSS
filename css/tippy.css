@@ -1,0 +1,34 @@
+.tippy-tooltip.honeybee-theme {
+      /* Your styling here. Example: */
+      background-color: white/* rgb(0,0,0,.8) */;
+      border: 2px solid orange;
+      color: black;
+      margin-left: 300px;
+      width: 1000px;
+      margin-right: -400px;
+
+      
+    }
+    /* Right placement tooltip arrow (arrow will be on left side of tooltip) */
+    .tippy-popper[x-placement^=right] .tippy-tooltip.honeybee-theme .tippy-arrow {
+        border-right: 7px solid orange; /* your color here */
+        margin-right: 500px;
+    }
+
+    /* Left placement tooltip arrow (arrow will be on right side of tooltip) */
+    .tippy-popper[x-placement^=left] .tippy-tooltip.honeybee-theme .tippy-arrow {
+        border-left: 7px solid orange; /* your color here */
+        margin-right: 500px;
+    }
+
+    /* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
+    .tippy-popper[x-placement^=top] .tippy-tooltip.honeybee-theme .tippy-arrow {
+        border-top: 7px solid orange; /* your color here */
+        margin-right: 500px;
+    }
+
+    /* Bottom placement tooltip arrow (arrow will be on top side of tooltip) */
+    .tippy-popper[x-placement^=bottom] .tippy-tooltip.honeybee-theme .tippy-arrow {
+        border-bottom: 7px solid orange; /* your color here */
+        margin-right: 500px;
+    }

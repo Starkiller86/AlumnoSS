@@ -1,0 +1,79 @@
+* {
+	font-family:arial;
+	font-size:14px;
+}
+
+body {
+	background-color:#c1e4eb;
+}
+
+.frame {
+	text-align:center;
+	padding-left:4em;
+	border:3px solid #318ce7;
+	border-radius: 4em 1em 4em 1em;
+	-webkit-border-radius: 4em 1em 4em 1em;
+	-moz-border-radius: 4em 1em 4em 1em;
+	behavior:url(../pie/PIE.htc);
+}
+
+#legend {
+	position:absolute;
+	left:40px;
+	top:0px;
+	padding:3px;
+	margin:0;
+	background-color:#c1e4eb;
+	color:#2d2c55;
+	font: bold 30px 'Calibri', Arial;
+	_padding:10px;
+}
+
+.frame fieldset{
+	padding:10px;
+	border:2px solid #318ce7;
+	width:auto;
+	height:auto;
+}
+
+.inputs {
+	margin-right: 100px;
+	margin-top:10px;
+	width:200px;
+}
+
+.submit {
+	padding-top:10px;
+}
+
+.comment {
+	margin-top:5px;
+	width:100%;
+	height:60px;
+	resize: none;
+}
+
+#hor-minimalist-b {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size:12px;
+	width:auto;
+	border-collapse:collapse;
+	text-align:left;
+	margin:20px;
+}
+
+#hor-minimalist-b th {
+	font-size:14px;
+	font-weight:bold;
+	border-bottom:2px solid #ec664d;
+	padding:10px 8px;
+}
+
+#hor-minimalist-b td {
+	border-bottom:1px solid #ec664d;
+	padding:6px 8px;
+} 
+
+.table > thead > tr > th{
+         text-align: center;
+} 

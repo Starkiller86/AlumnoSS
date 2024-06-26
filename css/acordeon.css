@@ -1,0 +1,42 @@
+body {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	background-color:#256a77;
+}
+.menu_list {	
+	width: 100%;
+}
+.menu_head {
+	padding: 8px 10px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	margin-left:0;
+	margin-right:0;
+	background: #256a77 url(../images/flecha-abajo.png) center right no-repeat;
+}
+.menu_body {
+	display:none;
+}
+.menu_body a{
+	display:block;
+	border-left: 15px double white;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#e6e6e6;
+	padding: 5px 0;
+	padding-left: 10px;
+	background-color:#669faa;
+	text-decoration:none;
+}
+.menu_body a:hover{
+	color: #EDD400;
+	background-color:white;
+}
+.tabla {
+	border:0px;
+	background-color:#BABDB6;
+	width:100%;
+}

@@ -1,0 +1,19 @@
+body {
+	border:0px;
+	margin:0px;
+	padding:0px;
+	background-color:black;
+}
+
+.textFooter {
+	position:relative;
+	top:10px;
+	text-align:right;
+	height:0px;
+}
+
+.textFooter label {
+	color:white;
+	font-weight:bold;
+	font-size:14px;
+}

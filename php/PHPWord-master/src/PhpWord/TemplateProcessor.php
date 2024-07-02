@@ -17,7 +17,7 @@
 
 namespace PhpOffice\PhpWord;
 
-require_once 'vendor/autoload.php';
+require_once '../php/PHPWord-master/vendor/composer/autoload.php';
 
 use PhpOffice\PhpWord\Exception\CopyFileException;
 use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;

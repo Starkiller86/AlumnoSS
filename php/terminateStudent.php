@@ -27,14 +27,14 @@
 		$minutosx = $min%60;
 		$h=(int)($min/60);
 		$horasx+=$h;
-		$query = "UPDATE alumno SET status='Terminado' WHERE id_aumno=$_GET[id]";
+		$query = "UPDATE alumno SET status='Terminado' WHERE id_alumno=$_GET[id]";
 		$result = mysqli_query($conn, $query) or header("Location:error.php?emysql=".mysqli_error($conn));
 		$query = "UPDATE alumno_servicio SET status='Terminado' WHERE id_alumno=$_GET[id]";
 		$result = mysqli_query($conn, $query) or header("Location:error.php?emysql=".mysqli_error($conn));
 		$query = "UPDATE horario SET status='Terminado' WHERE id_alumno=$_GET[id]";
 		$result = mysqli_query($conn, $query) or header("Location:error.php?emysql=".mysqli_error($conn));
 		$fp = fopen("../log/".$_GET['id'].".log", "a+");
-		fputs($fp, "\n_________________________________________\nSe termina la sesión ".date("d-m-Y - H:i:s")."\nTotal de horas realizadas: $horasx hrs $minutosx mins\nUsuario que termina la sesión del alumno: $_SESSION[user]\n_________________________________________");
+		fputs($fp, "\n_________________________________________\nSe termina la sesiÃ³n ".date("d-m-Y - H:i:s")."\nTotal de horas realizadas: $horasx hrs $minutosx mins\nUsuario que termina la sesiÃ³n del alumno: $_SESSION[user]\n_________________________________________");
 		fclose($fp);
 		header("Location:../forms/terminationDocForm.php?id=$_GET[id]&a=A0001");
 	}

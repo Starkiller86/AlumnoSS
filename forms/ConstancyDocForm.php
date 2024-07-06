@@ -20,7 +20,7 @@
 	<body onLoad="document.getElementById('name').focus()">
 		<br><fieldset class="frame">
 			<div id="legend">Generar constancia de horas de servicio</div>
-			<form id="formulario" name="formulario" method="get" action="../php/constancia.php">
+			<form id="formulario" name="formulario" method="get" action="">
 				<br><label>Alumno</label>
 				<span class="select-box">
 					<select name='id' class="inputs" id="nombre" onChange="document.getElementById('formulario').submit()">
@@ -73,6 +73,7 @@
 				echo "<br><center><span style='font-size:11pt;font-weight:bold;'>".$horas['status']."</span></center>
 				<br><center><span style='font-size:11pt;font-weight:bold;'>Total de horas acumuladas: $horasx h $minutosx m de $TotalHoras  h</span></center>";
 				if ($horas['status']=="Activo" and $horasx<=$TotalHoras) {
+					
 						echo "<br><a href='../php/constancia.php?id=$_GET[id]&doc=constancy' target='content'><img src='../images/documents.png' style='border:0' title='Generar carta de terminaci&oacute;n'></a><br>";
 					
 				}
